@@ -1,0 +1,17 @@
+{
+  "name": "百度应用商店",
+  "version": "1.0",
+  "manifest_version":2,
+  "description": "This is a auto click",
+  "icons":{"16":"100.png","48":"100.png","128":"100.png"},
+  "permissions": ["http://*/*"],
+  "browser_action": {
+    "default_icon": "100.png"
+  },
+  "content_scripts":[
+    {
+      "matches":["https://shouji.baidu.com/*"],
+      "js":["jquery-1.10.2.min.js","js.js"]
+    }
+  ]
+}
